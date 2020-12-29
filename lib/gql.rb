@@ -1,4 +1,4 @@
-# require "gql/version"
+require "gql/version"
 
 class GQL
   class Error < StandardError; end

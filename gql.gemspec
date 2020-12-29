@@ -2,7 +2,7 @@ require_relative 'lib/gql/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gql"
-  spec.version       = Gql::VERSION
+  spec.version       = GQL::VERSION
   spec.authors       = ["Jack Thorne"]
   spec.email         = ["jack@kilmer.co"]
 
