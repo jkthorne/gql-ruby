@@ -21,6 +21,8 @@ class GQL::Base
   def method_missing(m, *args, **kargs, &block)
     if m.to_s.start_with?("dots_")
       io << "...#{m[5..-1]}"
+    elsif m.to_s.start_with?("on_")
+      io << "...on #{m[3..-1]}"
     elsif m.to_s.start_with?("at_")
       io << "@#{m[3..-1]}"
     else
