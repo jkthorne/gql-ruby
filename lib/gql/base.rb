@@ -26,7 +26,7 @@ class GQL::Base
     elsif m.to_s.start_with?("at_")
       io << "@#{m[3..-1]}"
     else
-      io << " #{m.gsub("_", ":")}"
+      io << " #{m.to_s.gsub("_", ":")}"
     end
 
     if kargs.any?
