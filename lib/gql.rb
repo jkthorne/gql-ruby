@@ -13,6 +13,12 @@ require "gql/union"
 module GQL
   class Error < StandardError; end
 
+  def self.register(name, &block)
+    GQL::Base.send(:define_method, "#{name}!") do
+      block.call(self)
+    end
+  end
+
   def self.enum(name, consts)
     gql = Enum.new(name, consts)
     yield gql if block_given?
