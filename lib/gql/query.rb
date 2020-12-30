@@ -1,6 +1,6 @@
 require "gql/base"
 
-class GQL::Mutation < GQL::Base
+class GQL::Query < GQL::Base
   def initialize
     super
     @io = "query { "
