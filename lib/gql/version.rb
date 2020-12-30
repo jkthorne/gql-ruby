@@ -1,3 +1,3 @@
-class GQL
+module GQL
   VERSION = "0.1.0"
 end
