@@ -2,7 +2,6 @@ class GQL::Base
   attr_reader :io, :built
 
   def initialize
-    @io = ""
     @built = false
   end
 
